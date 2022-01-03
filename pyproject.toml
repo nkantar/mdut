@@ -30,6 +30,7 @@ packages = [
 ]
 
 include = [
+  "CHANGELOG.md",
   "LICENSE",
   "README.md",
 ]
