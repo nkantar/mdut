@@ -1,6 +1,6 @@
 import pytest
 
-from src.mdut import generate_tag
+from mdut.mdut import generate_tag
 
 
 @pytest.mark.parametrize(

@@ -1,6 +1,6 @@
 import pytest
 
-from src.mdut import extract_title
+from mdut.mdut import extract_title
 
 
 @pytest.mark.parametrize(
