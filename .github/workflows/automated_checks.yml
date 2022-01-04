@@ -1,0 +1,41 @@
+name: Automated Checks
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  automated_checks:
+
+    runs-on: ubuntu-latest
+    strategy: ["3.7", "3.8", "3.9", "3.10"]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install poetry
+          poetry config virtualenvs.create false
+          poetry install --no-root --no-interaction
+
+      - name: Run tests
+        run: pytest
+
+      - name: Run type checker
+        run: mypy --strict mdut
+
+      - name: Run linter
+        run: flake8
+
+      - name: Check build
+        run: poetry build
