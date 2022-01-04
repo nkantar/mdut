@@ -12,6 +12,18 @@ Security   - in case of vulnerabilities
 -->
 
 
+## [Unreleased]
+
+### Added
+
+- CI workflow for automated code quality checks
+- Support for Python 3.7, 3.8, and 3.9
+
+### Fixed
+
+- Minor linter errors
+
+
 ## [2022.0.1]
 
 ### Added
