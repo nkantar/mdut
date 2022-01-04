@@ -14,7 +14,7 @@ Security   - in case of vulnerabilities
 
 ## [2022.0.1]
 
-# Added
+### Added
 
 - Initial release! 🎉
 
