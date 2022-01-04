@@ -1,1 +1,1 @@
-from .mdut import inline, reference 
+from .mdut import inline, reference  # noqa
