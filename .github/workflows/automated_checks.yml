@@ -8,6 +8,7 @@ on:
 
 jobs:
   automated_checks:
+    name: Check code quality
 
     runs-on: ubuntu-latest
 
