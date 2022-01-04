@@ -1,4 +1,5 @@
 from string import Template
+from typing import Optional
 
 from bs4 import BeautifulSoup
 import click
@@ -29,7 +30,7 @@ def extract_title(html: str) -> str:
     return title
 
 
-def generate_tag(url: str, title: str | None, style: str = DEFAULT_STYLE) -> str:
+def generate_tag(url: str, title: Optional[str], style: str = DEFAULT_STYLE) -> str:
     if title is None:
         title = TODO
     return TAG_STYLES[style].substitute(url=url, title=title)
