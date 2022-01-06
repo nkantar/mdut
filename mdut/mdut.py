@@ -18,7 +18,18 @@ DEFAULT_STYLE = "reference"
 
 
 def fetch_html(url: str) -> str:
-    return httpx.get(url).text
+    try:
+        text = httpx.get(url).text
+
+        # more and more sites are https-only
+        if not text and url.startswith("http://"):
+            text = fetch_html(url.replace("http", "https"))
+
+        return text
+
+    # allow being lazy, e.g., just "example.com"
+    except httpx.UnsupportedProtocol:
+        return fetch_html(f"https://{url}")
 
 
 def extract_title(html: str) -> str:
