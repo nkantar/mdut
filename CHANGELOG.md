@@ -14,6 +14,9 @@ Security   - in case of vulnerabilities
 
 ## [Unreleased]
 
+
+## [2022.3.0]
+
 ### Added
 
 - Missing reference style tests
@@ -50,7 +53,8 @@ Security   - in case of vulnerabilities
 - Initial release! 🎉
 
 
-[Unreleased]: https://github.com/nkantar/mdut/compare/2022.2.0...HEAD
+[Unreleased]: https://github.com/nkantar/mdut/compare/2022.3.0...HEAD
+[2022.3.0]: https://github.com/nkantar/mdut/compare/2022.2.0...2022.3.0
 [2022.2.0]: https://github.com/nkantar/mdut/compare/2022.1.0...2022.2.0
 [2022.1.0]: https://github.com/nkantar/mdut/compare/2022.0.1...2022.1.0
 [2022.0.1]: https://github.com/nkantar/mdut/releases/tag/2022.0.1
