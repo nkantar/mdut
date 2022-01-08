@@ -14,6 +14,10 @@ Security   - in case of vulnerabilities
 
 ## [Unreleased]
 
+### Changed
+
+- Reordered styles to put default first
+
 
 ## [2022.2.0]
 

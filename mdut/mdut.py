@@ -10,8 +10,8 @@ import pyperclip  # type: ignore
 TODO = "TODO"
 
 TAG_STYLES = {
-    "inline": Template('[TODO]($url "$title")'),
     "reference": Template('[TODO]: $url "$title"'),
+    "inline": Template('[TODO]($url "$title")'),
 }
 
 DEFAULT_STYLE = "reference"
