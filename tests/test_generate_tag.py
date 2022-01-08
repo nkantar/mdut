@@ -6,6 +6,18 @@ from mdut.mdut import generate_tag
 @pytest.mark.parametrize(
     "url,title,tag",
     [
+        ("foo", "bar", '[TODO]: foo "bar"'),
+        ("foo", "", '[TODO]: foo ""'),
+        ("foo", None, '[TODO]: foo "TODO"'),
+    ],
+)
+def test_reference(url, title, tag):
+    assert generate_tag(url, title, "reference") == tag
+
+
+@pytest.mark.parametrize(
+    "url,title,tag",
+    [
         ("foo", "bar", '[TODO](foo "bar")'),
         ("foo", "", '[TODO](foo "")'),
         ("foo", None, '[TODO](foo "TODO")'),

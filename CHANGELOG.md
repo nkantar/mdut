@@ -14,6 +14,10 @@ Security   - in case of vulnerabilities
 
 ## [Unreleased]
 
+### Added
+
+- Missing reference style tests
+
 ### Changed
 
 - Reordered styles to put default first
