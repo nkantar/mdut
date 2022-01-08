@@ -12,6 +12,7 @@ TODO = "TODO"
 TAG_STYLES = {
     "reference": Template('[TODO]: $url "$title"'),
     "inline": Template('[TODO]($url "$title")'),
+    "slack": Template("[TODO]($url)"),
 }
 
 DEFAULT_STYLE = "reference"
@@ -63,13 +64,7 @@ def markdown_url_tag(url: str, style: str) -> str:
 )
 @click.argument("url")
 def mdut(url: str, style: str = DEFAULT_STYLE) -> str:
-    """
-    Markdown URL tag generator. Supports inline and reference (default) tags.
-
-    Inline: [TODO](http://example.com "Example Domain")
-
-    Reference: [TODO]: http://example.com "Example Domain"
-    """
+    """Markdown URL tag generator."""
     tag = markdown_url_tag(url, style)
     pyperclip.copy(tag)
     click.echo(f"Copied to clipboard:\n{tag}")
@@ -88,4 +83,8 @@ def inline(url: str) -> str:
     return markdown_url_tag(url, "inline")
 
 
-__all__ = ["reference", "inline"]
+def slack(url: str) -> str:
+    return markdown_url_tag(url, "slack")
+
+
+__all__ = ["reference", "inline", "slack"]

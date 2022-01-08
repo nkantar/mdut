@@ -17,6 +17,7 @@ Security   - in case of vulnerabilities
 ### Added
 
 - Missing reference style tests
+- Slack style
 
 ### Changed
 
