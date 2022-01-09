@@ -9,6 +9,7 @@ from mdut.mdut import extract_title
         ("<html><head><title>foo</title></head></html>", "foo"),
         ("<html><head><title>bar</title>", "bar"),
         ("<html><head><title>baz</head></html>", "baz"),
+        ('<html><head><title>b"a“r”f</title></head></html>', 'b\\"a“r”f'),
     ],
 )
 def test_valid(html, title):

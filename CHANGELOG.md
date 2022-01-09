@@ -15,6 +15,13 @@ Security   - in case of vulnerabilities
 ## [Unreleased]
 
 
+## [2022.3.1]
+
+### Fixed
+
+- Quotes in titles are now escaped
+
+
 ## [2022.3.0]
 
 ### Added
@@ -53,7 +60,8 @@ Security   - in case of vulnerabilities
 - Initial release! 🎉
 
 
-[Unreleased]: https://github.com/nkantar/mdut/compare/2022.3.0...HEAD
+[Unreleased]: https://github.com/nkantar/mdut/compare/2022.3.1...HEAD
+[2022.3.1]: https://github.com/nkantar/mdut/compare/2022.3.0...2022.3.1
 [2022.3.0]: https://github.com/nkantar/mdut/compare/2022.2.0...2022.3.0
 [2022.2.0]: https://github.com/nkantar/mdut/compare/2022.1.0...2022.2.0
 [2022.1.0]: https://github.com/nkantar/mdut/compare/2022.0.1...2022.1.0

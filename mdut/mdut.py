@@ -39,7 +39,7 @@ def extract_title(html: str) -> str:
         title = getattr(getattr(getattr(soup, "head"), "title"), "text") or TODO
     except (AttributeError, TypeError):
         title = TODO
-    return title
+    return title.replace('"', '\\"')
 
 
 def generate_tag(url: str, title: Optional[str], style: str = DEFAULT_STYLE) -> str:
