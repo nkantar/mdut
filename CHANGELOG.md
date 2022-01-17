@@ -22,13 +22,6 @@ Security   - in case of vulnerabilities
 - CalVer from `YYYY.minor.micro` to `YY.minor.micro`
 
 
-## [2022.3.2]
-
-### Added
-
-- [Reversioning][yanked] notice
-
-
 ## [2022.3.1] - ~~[yanked]~~ deleted
 
 ### Fixed
