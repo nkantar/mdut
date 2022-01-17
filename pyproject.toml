@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mdut"
-version = "2022.3.1"
+version = "22.3.1"
 description = "Markdown URL tag generator"
 license = "MIT"
 authors = ["Nik Kantar <nik@nkantar.com>"]
