@@ -29,14 +29,14 @@ Security   - in case of vulnerabilities
 - [Reversioning][yanked] notice
 
 
-## [2022.3.1] - [yanked]
+## [2022.3.1] - ~~[yanked]~~ deleted
 
 ### Fixed
 
 - Quotes in titles are now escaped
 
 
-## [2022.3.0] - [yanked]
+## [2022.3.0] - ~~[yanked]~~ deleted
 
 ### Added
 
@@ -48,14 +48,14 @@ Security   - in case of vulnerabilities
 - Reordered styles to put default first
 
 
-## [2022.2.0] - [yanked]
+## [2022.2.0] - ~~[yanked]~~ deleted
 
 ### Added
 
 - Fallback from no protocol and http to https
 
 
-## [2022.1.0] - [yanked]
+## [2022.1.0] - ~~[yanked]~~ deleted
 
 ### Added
 
@@ -67,7 +67,7 @@ Security   - in case of vulnerabilities
 - Minor linter errors
 
 
-## [2022.0.1] - [yanked]
+## [2022.0.1] - ~~[yanked]~~ deleted
 
 ### Added
 
