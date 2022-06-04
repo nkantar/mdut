@@ -14,6 +14,10 @@ Security   - in case of vulnerabilities
 
 ## [Unreleased]
 
+### Fixed
+
+- Whitespace surrounding title text
+
 
 ## [22.3.1]
 

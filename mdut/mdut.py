@@ -33,13 +33,23 @@ def fetch_html(url: str) -> str:
         return fetch_html(f"https://{url}")
 
 
+def sanitize_title(title: str) -> str:
+    # strip whitespace
+    clean_title = title.strip()
+
+    # escape quotation marks
+    clean_title = clean_title.replace('"', '\\"')
+
+    return clean_title
+
+
 def extract_title(html: str) -> str:
     try:
         soup = BeautifulSoup(html, "html.parser")
         title = getattr(getattr(getattr(soup, "head"), "title"), "text") or TODO
     except (AttributeError, TypeError):
         title = TODO
-    return title.replace('"', '\\"')
+    return sanitize_title(title)
 
 
 def generate_tag(url: str, title: Optional[str], style: str = DEFAULT_STYLE) -> str:

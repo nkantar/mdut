@@ -10,6 +10,13 @@ from mdut.mdut import extract_title
         ("<html><head><title>bar</title>", "bar"),
         ("<html><head><title>baz</head></html>", "baz"),
         ('<html><head><title>b"a“r”f</title></head></html>', 'b\\"a“r”f'),
+        (
+            (
+                "<head><title> \t 2018 Yamaha XSR700 Sport Heritage Motorcycle - Model "
+                "Home \t </title></head>"
+            ),
+            "2018 Yamaha XSR700 Sport Heritage Motorcycle - Model Home",
+        ),
     ],
 )
 def test_valid(html, title):
