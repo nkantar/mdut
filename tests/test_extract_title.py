@@ -19,7 +19,7 @@ from mdut.mdut import extract_title
         ),
     ],
 )
-def test_valid(html, title):
+def test_valid(html: str, title: str) -> None:
     assert extract_title(html) == title
 
 
@@ -35,5 +35,5 @@ def test_valid(html, title):
         int,
     ],
 )
-def test_invalid(html):
+def test_invalid(html: str) -> None:
     assert extract_title(html) == "TODO"
