@@ -11,7 +11,7 @@ from mdut.mdut import generate_tag
         ("foo", None, '[TODO]: foo "TODO"'),
     ],
 )
-def test_reference(url, title, tag):
+def test_reference(url: str, title: str, tag: str) -> None:
     assert generate_tag(url, title, "reference") == tag
 
 
@@ -23,7 +23,7 @@ def test_reference(url, title, tag):
         ("foo", None, '[TODO](foo "TODO")'),
     ],
 )
-def test_inline(url, title, tag):
+def test_inline(url: str, title: str, tag: str) -> None:
     assert generate_tag(url, title, "inline") == tag
 
 
@@ -35,5 +35,5 @@ def test_inline(url, title, tag):
         ("foo", None, "[TODO](foo)"),
     ],
 )
-def test_slack(url, title, tag):
+def test_slack(url: str, title: str, tag: str) -> None:
     assert generate_tag(url, title, "slack") == tag

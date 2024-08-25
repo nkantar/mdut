@@ -2,17 +2,22 @@
 
 
 <!--
-headers:
-Added      - new features
-Changed    - changes in existing functionality
-Deprecated - soon-to-be removed features
-Removed    - now removed features
-Fixed      - any bug fixes
-Security   - in case of vulnerabilities
+- Added: for new features
+- Changed: for changes in existing functionality
+- Deprecated: for soon-to-be removed features
+- Removed: for now removed features
+- Fixed: for any bug fixes
+- Security: in case of vulnerabilities
 -->
 
 
 ## [Unreleased]
+
+### Added
+- Python 3.11, and 3.12 to CI version matrix
+
+### Removed
+- Python 3.7 and 3.8 from CI version matrix
 
 
 ## [22.6.0]
